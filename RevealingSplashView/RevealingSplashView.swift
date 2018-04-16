@@ -108,10 +108,16 @@ open class RevealingSplashView: UIView, SplashAnimatable{
         imageView?.frame = CGRect(x: 0, y: 0, width: iconInitialSize.width, height: iconInitialSize.height)
         //Sets the content mode and set it to be centered
         imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        imageView?.center = self.center
         
         //Adds the icon to the view
         self.addSubview(imageView!)
+
+        imageView?.translatesAutoresizingMaskIntoConstraints = false
+        imageView?.addConstraint(NSLayoutConstraint(item: imageView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: iconInitialSize.height))
+        imageView?.addConstraint(NSLayoutConstraint(item: imageView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: iconInitialSize.width))
+        translatesAutoresizingMaskIntoConstraints = false
+        addConstraint(NSLayoutConstraint(item: imageView!, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
+        addConstraint(NSLayoutConstraint(item: imageView!, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0))
         
         //Sets the background color
         self.backgroundColor = backgroundColor
