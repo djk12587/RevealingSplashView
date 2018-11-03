@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RevealingSplashView"
-  s.version      = "0.5.0"
+  s.version      = "0.6.0"
   s.summary      = "A Splash view that animates and reveals its content, inspired by the Twitter splash."
   s.description  = <<-DESC
 A Splash view that animates and reveals its content, inspired by the Twitter splash, written in Swift
@@ -13,9 +13,10 @@ A Splash view that animates and reveals its content, inspired by the Twitter spl
   s.author             = { "Chris Jimenez" => "cjimenez16@gmail.com" }
   s.social_media_url   = "http://twitter.com/chrisjimeneznat"
 
-  s.platform     = :ios, "8.0"
+  s.platform           = :ios, "8.0"
+  s.swift_version      = "4.2"
 
-  s.source       = { :git => "https://github.com/PiXeL16/RevealingSplashView.git", :tag => s.version }
+  s.source        = { :git => "https://github.com/PiXeL16/RevealingSplashView.git", :tag => s.version }
   s.source_files  = "RevealingSplashView/", "RevealingSplashView/**/*.{h,m,swift}"
 
 end
