@@ -153,6 +153,9 @@
 		834E423D1C7FFC71007F856E /* RevealingSplashView */ = {
 			isa = PBXGroup;
 			children = (
+				834E427D1C800F5B007F856E /* SplashAnimationType.swift */,
+				834E427F1C800FA6007F856E /* SplashAnimatable.swift */,
+				834E42871C8027D7007F856E /* Animations.swift */,
 				834E427C1C800E92007F856E /* Animations */,
 				834E423E1C7FFC71007F856E /* RevealingSplashView.h */,
 				834E42401C7FFC71007F856E /* Info.plist */,
@@ -198,9 +201,6 @@
 		834E427C1C800E92007F856E /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				834E427D1C800F5B007F856E /* SplashAnimationType.swift */,
-				834E427F1C800FA6007F856E /* SplashAnimatable.swift */,
-				834E42871C8027D7007F856E /* Animations.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
