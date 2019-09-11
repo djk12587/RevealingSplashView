@@ -22,8 +22,5 @@ let package = Package(
             name: "RevealingSplashView",
             dependencies: [],
             path: "RevealingSplashView"),
-        .testTarget(
-            name: "RevealingSplashViewTests",
-            dependencies: ["RevealingSplashView"]),
     ]
 )
